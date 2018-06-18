@@ -1,0 +1,31 @@
+.xans-member-login {margin:20px 0 0 0; }
+.xans-member-login h3 { margin:0 0 20px 0; text-align:left; font-size:20px; line-height:36px; }
+.inputTypeText {padding:0px !important; }
+
+.xans-member-login .login { margin:0 0 3px 0; padding:30px 0; border:none; }
+.xans-member-login .login fieldset { position:relative; width:80%; margin:0 auto; }
+.xans-member-login .login fieldset .id,
+.xans-member-login .login fieldset .password { overflow:hidden; display:block; width:342px; margin:0 0 2px;  border-radius:2px; }
+.xans-member-login .login fieldset .id span,
+.xans-member-login .login fieldset .password span { float:left; font-size:14px; text-align:left; line-height:40px; width:37px; }
+.xans-member-login .login fieldset input { float:left; width:303px; line-height:40px; height:40px; }
+.xans-member-login .login fieldset .security { padding:0 0 0 5px; margin:10px 0; }
+.xans-member-login .login fieldset .security img { vertical-align:middle; }
+.xans-member-login .login fieldset .security input { width:13px; height:13px; margin:0 3px 0 0; vertical-align:-3px; *vertical-align:2px; }
+.xans-member-login .login fieldset .security label { margin:0 6px 0 0; }
+
+.btnArea {float:left; }
+.btnArea a { font-size:14px; padding:8px 155px !important; }
+
+.xans-member-login .login fieldset > a { position:absolute; top:0; right:7px; }
+.xans-member-login .login fieldset ul { overflow:hidden; padding:13px 0 13px 51px; margin:0; border:0; width:340px;box-sizing:border-box; font-weight:bold; }
+.xans-member-login .login fieldset li { float:left; padding:0 30px 0 0px; }
+.xans-member-login .login fieldset li a {}
+.xans-member-login .login fieldset .link { width:340px; text-align:left; position:absolute; top:0px; right:0px; font-size:13px; line-height:24px; font-weight:Regular; }
+.xans-member-login .login fieldset .link a { position:absolute; top:55px; right:0; padding:30px 48px; }
+.xans-member-login .login fieldset .link strong {font-size:20px; line-height:36px; }
+
+.xans-member-login .login fieldset .snsArea { padding:0; margin:0 0 0 0px; width:100%; text-align:left; }
+.xans-member-login .login fieldset .snsArea li { margin:7px 0 0 0px; padding:0; background:none; width:100%; }
+.xans-member-login .login fieldset #noMemberWrap { margin-top:132px; }
+.xans-member-login .login fieldset #noMemberWrap a {padding:12px 102px !important; }

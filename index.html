@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>acasa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login-box.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider({
+          auto:true,
+          pause:3000,
+
+        });
+      });
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("slideNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("slideNav").style.width = "0";
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- 헤더 시작 -->
+    <header>
+      <div class="container">
+        <a href="http://acasa.cafe24.com" alt="home">
+          <img class="logo" src="img/acasa-logo.svg" alt="acasa-logo">
+        </a>
+        <nav class="fixedNav">
+          <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FABRIC</a></li>
+            <li><a href="#">ONLINE SHOP</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">BOARD</a></li>
+          </ul>
+        </nav>
+        <div class="login-box">
+          <a href="member/login.html" module="Layout_statelogoff">Login</a>
+          <a href="{$action_logout}" module="Layout_stateLogon">Logout</a>
+          <br />
+          <a href="member/join.html" module="Layout_statelogoff">Join</a>
+          <a href="member/modify.html"module="Layout_stateLogon">Edit</a>
+          <br />
+          <a href="/myshop/index.html">Mypage</a>
+          <br />
+          <a href="/myshop/order/list.html">Order</a>
+          <br />
+          <a href="/order/basket.html" module="Layout_orderBasketcount">CART({$basket_count})</a>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 종료 -->
+
+    <!-- 본문 시작 -->
+    <section class="conA">
+      <div class="container">
+        <div class="title">
+          <p>Hello, We are acasa!</p>
+        </div>
+        <div class="slider">
+          <a href="#"><img src="img/slide01.jpg" alt="slide01"></a>
+          <a href="#"><img src="img/slide02.jpg" alt="slide01"></a>
+          <a href="#"><img src="img/slide03.jpg" alt="slide01"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="conB">
+      <div class="container">
+        <div class="title">
+          <p>New Products</p>
+        </div>
+        <div class="productList">
+          <div class="newProduct">
+            <div class="thumbnail">
+              <img src="img/sq04.png" alt="newProduct1">
+              <div class="darkBack"></div>
+            </div>
+            <p class="name">New Product1</p>
+            <p class="size">W1800 H750 D950</p>
+            <p class="cost1">1,200,000</p>
+            <p class="cost2">1,000,000</p>
+            <div class="saleTag">
+              <p class="saleNum">20%</p>
+            </div>
+            <a href="#" class="linkProduct"></a>
+          </div>
+          <div class="newProduct">
+            <div class="thumbnail">
+              <img src="img/sq03.png" alt="newProduct2">
+              <div class="darkBack"></div>
+            </div>
+            <p class="name">New Product2</p>
+            <p class="size">W1800 H750 D950</p>
+            <p class="cost1">1,200,000</p>
+            <p class="cost2">1,000,000</p>
+            <div class="saleTag">
+              <p class="saleNum">20%</p>
+            </div>
+            <a href="#" class="linkProduct"></a>
+          </div>
+          <div class="newProduct">
+            <div class="thumbnail">
+              <img src="img/sq05.png" alt="newProduct3">
+              <div class="darkBack"></div>
+            </div>
+            <p class="name">New Product3</p>
+            <p class="size">W1800 H750 D950</p>
+            <p class="cost1">1,200,000</p>
+            <p class="cost2">1,000,000</p>
+            <div class="saleTag">
+              <p class="saleNum">20%</p>
+            </div>
+            <a href="#" class="linkProduct"></a>
+          </div>
+          <div class="newProduct">
+            <div class="thumbnail">
+              <img src="img/sq06.png" alt="newProduct4">
+              <div class="darkBack"></div>
+            </div>
+            <p class="name">New Product4</p>
+            <p class="size">W1800 H750 D950</p>
+            <p class="cost1">1,200,000</p>
+            <p class="cost2">1,000,000</p>
+            <div class="saleTag">
+              <p class="saleNum">20%</p>
+            </div>
+            <a href="#" class="linkProduct"></a>
+          </div>
+          <div class="newProduct">
+            <div class="thumbnail">
+              <img src="img/sq07.png" alt="newProduct5">
+              <div class="darkBack"></div>
+            </div>
+            <p class="name">New Product5</p>
+            <p class="size">W1800 H750 D950</p>
+            <p class="cost1">1,200,000</p>
+            <p class="cost2">1,000,000</p>
+            <div class="saleTag">
+              <p class="saleNum">20%</p>
+            </div>
+            <a href="#" class="linkProduct"></a>
+          </div>
+          <div class="newProduct">
+            <div class="thumbnail">
+              <img src="img/sq08.png" alt="newProduct6">
+              <div class="darkBack"></div>
+            </div>
+            <p class="name">New Product6</p>
+            <p class="size">W1800 H750 D950</p>
+            <p class="cost1">1,200,000</p>
+            <p class="cost2">1,000,000</p>
+            <div class="saleTag">
+              <p class="saleNum">20%</p>
+            </div>
+            <a href="#" class="linkProduct"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conC">
+      <div class="container">
+        <div class="title">
+          <p>Event</p>
+        </div>
+        <div class="eventList">
+          <div class="event">
+            <div class="thumbnail">
+              <img src="img/event01.jpg" alt="event1" class="imgEvent">
+              <div class="darkBack"></div>
+            </div>
+            <p class="eventName">Site Renewer Event<br />
+              <span class="eventInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </span>
+            </p>
+            <img src="img/yellowtriangle.svg" alt="more" class="moreBtn"/>
+            <a href="#" class="linkEvent"></a>
+          </div>
+          <div class="event">
+            <div class="thumbnail">
+              <img src="img/event02.jpg" alt="event2" class="imgEvent">
+              <div class="darkBack"></div>
+            </div>
+            <p class="eventName">Review Event<br />
+              <span class="eventInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </span>
+            </p>
+            <img src="img/yellowtriangle.svg" alt="more" class="moreBtn"/>
+            <a href="#" class="linkEvent"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conD">
+      <div class="container">
+        <div class="title">
+          <p>About Us</p>
+        </div>
+        <div class="aboutUsList">
+          <div class="aboutUs">
+            <div class="thumbnail">
+              <img src="img/aboutus01.jpg" alt="aboutUs1" />
+              <div class="darkBack"></div>
+            </div>
+            <p class="keyword">전통과 도전</p>
+            <p class="content">
+              국내 가구 업계, 4형제의 이야기를 모르는 가구인은 없을겁니다.
+              과거 M사와 O사를 운영하던 첫째와 둘째, 현재까지 활발한 활동을 이어가고있는 A사의 셋째와 E사를 이끌고 있는 저의 아버지, 막내의 이야기입니다.
+              "자신이 만족할 수 있는 정직한 가구를 만들어야한다." 라는 아버지의 정신을 이어받아 아들마저 가구의 길에 오르니, 2017년 봄에는 가구에도 봄이 찾아옵니다.
+            </p>
+            <a href="#" class="linkAboutUs"></a>
+          </div>
+          <div class="aboutUs">
+            <div class="thumbnail">
+              <img src="img/aboutus02.jpg" alt="aboutUs2" />
+              <div class="darkBack"></div>
+            </div>
+            <p class="keyword">변화</p>
+            <p class="content">
+              오로지 잘 팔리는 상품에만 집착하던 시장에 흔들리지 않고 더 좋은 제품을 만드는 것에 집중하여 가구 시장을 선도하겠습니다.
+              유행이나 이윤에 사로잡히지 않고 언제나 배우는 자세로 새로운 소재와 기능을 연구하여 없었던 디자인으로 여러분의 질 좋은 삶에 보탬이 되겠습니다.
+              다름의 가치를 알고 변화하는 아까사의 성장이 기대되는 이유입니다.
+            </p>
+            <a href="#" class="linkAboutUs"></a>
+          </div>
+          <div class="aboutUs">
+            <div class="thumbnail">
+              <img src="img/aboutus03.jpg" alt="aboutUs3" />
+              <div class="darkBack"></div>
+            </div>
+            <p class="keyword">품질</p>
+            <p class="content">
+              아까사의 가구를 선택하셨다면 적어도 가구만은 걱정을 덜어놓으셔도 됩니다.
+              일상의 아이디어에서 시작된 아까사의 디자인은 컴퓨터와 수작업을 통해 정확한 도면으로 그려지며 30년 이상 경력의 장인들이 자부심을 가지고 수작업으로 만듭니다.
+              아까사의 가구는 안전하고 오래갑니다. 안전성과 편안한 설계, 나아가 실용성은 가구의 본질이며 약속이기 때문입니다.
+              여러분의 가구는 아까사가 책임지겠습니다.
+            </p>
+            <a href="#" class="linkAboutUs"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conE">
+      <div class="container">
+        <div class="title">
+          <p>Showroom</p>
+        </div>
+        <div class="showroomList">
+          <div class="showroom">
+            <div class="thumbnail">
+              <div class="centerBox">
+                <img src="img/showroom.jpg" alt="showroom" />
+                <div class="darkBack"></div>
+                <a href="#" class="linkShowroom"></a>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <div class="mapSize">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.3524169466496!2d127.1775999160639!3d37.5703183316678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356333965050729f%3A0x7016bfcf2cfe2d68!2sAkkasa!5e0!3m2!1sit!2skr!4v1528881430109" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="informationBox">
+            <div class="showroomInfo">
+              <!-- <p class="welcome">"아까사는 언제나 여러분의 방문을 환영합니다.<br />
+                서울 근교 하남 미사강변 신도시에 위치해있어 부담없이<br />
+                방문하실 수 있습니다."</p> -->
+              <p class="locationTitle">Location</p>
+              <p class="location">경기도 하남시 미사강변북로30번안길 20</p>
+              <p class="hourTitle">Opening Hours</p>
+              <p class="hour">11:00 ~ 20:00<br />매주 화요일 휴무</p>
+              <p class="contactTitle">Contact</p>
+              <p class="contact">tel. 031 794 9450<br />fax. 031 794 9451<br />mail. choi@acasa.kr</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conLast">
+      <div class="container">
+
+      </div>
+    </section>
+    <!-- 본문 종료 -->
+
+    <!-- 푸터 시작 -->
+    <footer>
+      <div class="container">
+        <div class="fixedInfo">
+          <p>상호. 아까사(acasa)</p>
+          <p>대표. 최은혁</p>
+          <p>개인정보관리책임자. 최은혁</p>
+          <p>전화. 031-794-9450</p>
+          <p>팩스. 031-794-9451</p>
+          <p>이메일. choi@acasa.kr</p>
+          <p>주소.<br />경기도 하남시 미사강변북로30번안길 20</p>
+          <p>사업자등록번호.<br />199-32-00198</p>
+          <p>통신판매.<br />제 2017-경기하남-0317 호</p>
+          <p>Copyright© 2018 All rights reserved by acasa</p>
+        </div>
+        <div class="mobileInfo">
+          <p>상호. 아까사(acasa) | 대표. 최은혁 | 개인정보관리책임자. 최은혁</p>
+          <p>전화. 031-794-9450 | 팩스. 031-794-9451 | 이메일. choi@acasa.kr</p>
+          <p>주소. 경기도 하남시 미사강변북로30번안길 20 | 사업자등록번호. 199-32-00198</p>
+          <p>통신판매. 제 2017-경기하남-0317 호</p>
+          <p class="copyright">Copyright© 2018 All rights reserved by acasa</p>
+        </div>
+      </div>
+    </footer>
+    <!-- 푸터 종료 -->
+
+    <!-- 모바일 전용 제일 꼭대기 section 시작 -->
+    <section class="conMobileA">
+      <div class="container">
+        <a href="http://acasa.cafe24.com" alt="home">
+          <img class="logo" src="img/acasa-logo.svg" alt="acasa-logo">
+        </a>
+        <div class="navBtnBox"  onclick="openNav()">
+          <img src="img/navBtn.svg" alt="navButton" class="navBtn">
+        </div>
+      </div>
+      <div id="slideNav" class="slideNav">
+        <div class="darkBack" onclick="closeNav()"></div>
+        <nav class="mobileNav" onclick="closeNav()">
+          <div class="xBox" onclick="closeNav()">
+            <img src="img/closeBtn.svg" class="closebtn">
+          </div>
+          <ul>
+            <a href="#"><li>ABOUT US</li></a>
+            <a href="#"><li>FABRIC</li></a>
+            <a href="#"><li>ONLINE SHOP</li></a>
+            <a href="#"><li>EVENT</li></a>
+            <a href="#"><li>BOARD</li></a>
+            <div class="login-box">
+              <a href="member/login.html" module="Layout_statelogoff">Login</a>
+              <a href="{$action_logout}" module="Layout_stateLogon">Logout</a>
+              <br />
+              <a href="member/join.html" module="Layout_statelogoff">Join</a>
+              <a href="member/modify.html"module="Layout_stateLogon">Edit</a>
+              <br />
+              <a href="/myshop/index.html">Mypage</a>
+              <br />
+              <a href="/myshop/order/list.html">Order</a>
+              <br />
+              <a href="/order/basket.html" module="Layout_orderBasketcount">CART({$basket_count})</a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- 모바일 전용 제일 꼭대기 section 종료 -->
+  </body>
+</html>

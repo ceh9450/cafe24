@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.login-box{
+  margin: 10px 30px;
+  padding-top: 15px;
+  border-top: 1px #666666 solid;
+}
+
+.login-box a{
+  text-decoration: none;
+  color: #666666;
+  color: var(--textMidColor);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.login-box a:hover{
+  color: #edd000;
+  color: var(--textHoverColor);
+  transition: 0.3s;
+}
