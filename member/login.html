@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>acasa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login-box.css">
+    <link rel="stylesheet" href="../css/module/member/login.css">
+    <script src="js/jquery-3.3.1.js"></script>
+  </head>
+
+  <body>
+    <!-- 헤더 시작 -->
+    <header>
+      <div class="container">
+        <a href="http://acasa.cafe24.com" alt="home">
+          <img class="logo" src="../img/acasa-logo.svg" alt="acasa-logo">
+        </a>
+        <nav class="fixedNav">
+          <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">FABRIC</a></li>
+            <li><a href="#">ONLINE SHOP</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">BOARD</a></li>
+          </ul>
+        </nav>
+        <div class="login-box">
+          <a href="member/login.html" module="Layout_statelogoff">Login</a>
+          <a href="{$action_logout}" module="Layout_stateLogon">Logout</a>
+          <br />
+          <a href="member/join.html" module="Layout_statelogoff">Join</a>
+          <a href="member/modify.html"module="Layout_stateLogon">Edit</a>
+          <br />
+          <a href="/myshop/index.html">Mypage</a>
+          <br />
+          <a href="/myshop/order/list.html">Order</a>
+          <br />
+          <a href="/order/basket.html" module="Layout_orderBasketcount">CART({$basket_count})</a>
+        </div>
+      </div>
+    </header>
+    <!-- 헤더 종료 -->
+
+    <!-- 본문 시작 -->
+    <div module="member_login">
+        <!--@css(/css/module/member/login.css)-->
+        <!--
+            $defaultReturnUrl = /index.html
+            $forbidIpUrl = member/adminFail.html
+        -->
+        <div class="login">
+            <fieldset>
+                <h3>MEMBER LOGIN</h3>
+                <legend>MEMBER LOGIN</legend>
+                <label class="id"><span>ID</span>{$form.member_id}</label>
+                <label class="password"><span>PW</span>{$form.member_passwd}</label>
+                <ul>
+                    <li><a href="../member/id/find_id.html">아이디찾기</a></li>
+                    <li><a href="../member/passwd/find_passwd_info.html">비밀번호찾기</a></li>
+                    <li>{$form.member_check_save_id}{$form.member_check_secret_connect}</li>
+                </ul>
+
+                <div class="btnArea">
+                    <a href="#none" onclick="{$action_func_login}" class="point">login</a>
+                </div>
+                <ul class="snsArea">
+                    <li class="{$display_naver|display}">
+                        <a href="#none" onclick="{$naver_func_login}"><img src="/web/upload/season1/naver_login.png" alt="네이버 로그인" /></a>
+                    </li>
+                    <li class="{$display_facebook|display}">
+                        <a href="#none" onclick="{$facebook_func_login}"><img src="/web/upload/season1/facebook_login.png" alt="페이스북 로그인" /></a>
+                    </li>
+                    <li class="{$display_google|display}">
+                        <a href="#none" onclick="{$google_func_login}"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_google_login.gif" alt="구글 로그인" /></a>
+                    </li>
+                </ul>
+
+                <p class="link" module="Layout_footer">
+                    <strong>JOIN MEMBER</strong><br><br>
+                    {$mall_name}의 가족이 되세요!
+                    <br />회원가입을 하시면 다양하고<br>
+                    특별한 혜택이 주어집니다.
+                    <a href="/member/join.html">join</a>
+                </p>
+
+                <p class="link {$display_nomember|display}" id="noMemberWrap">
+                    <a href="{$returnUrl}" onclick="{$action_nomember_order}">nonmembership order</a>
+                </p>
+            </fieldset>
+        </div>
+    </div>
+
+    <div module="MyShop_OrderHistoryNologin">
+        <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+        <!--
+            $orderDetailUrl = /myshop/order/detail.html
+        -->
+        <h3>NONMEMBERSHIP ORDER INQUIRY</h3>
+        <p>비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</p>
+        <ul>
+            <li><strong>{$form_label.order_name}</strong> {$form.order_name}</li>
+            <li class="number"><strong>{$form_label.order_id}</strong> {$form.order_id}</li>
+            <li><strong>{$form_label.order_password}</strong> {$form.order_password}</li>
+        </ul>
+        <p class="button"><input type="image" src="/web/upload/supload/img/btn_login.jpg" alt="조회" /></p>
+    </div>
+    <!-- 본문 종료 -->
+
+    <!-- 푸터 시작 -->
+    <footer>
+      <div class="container">
+        <div class="fixedInfo">
+          <p>상호. 아까사(acasa)</p>
+          <p>대표. 최은혁</p>
+          <p>개인정보관리책임자. 최은혁</p>
+          <p>전화. 031-794-9450</p>
+          <p>팩스. 031-794-9451</p>
+          <p>이메일. choi@acasa.kr</p>
+          <p>주소.<br />경기도 하남시 미사강변북로30번안길 20</p>
+          <p>사업자등록번호.<br />199-32-00198</p>
+          <p>통신판매.<br />제 2017-경기하남-0317 호</p>
+          <p>Copyright© 2018 All rights reserved by acasa</p>
+        </div>
+        <div class="mobileInfo">
+          <p>상호. 아까사(acasa) | 대표. 최은혁 | 개인정보관리책임자. 최은혁</p>
+          <p>전화. 031-794-9450 | 팩스. 031-794-9451 | 이메일. choi@acasa.kr</p>
+          <p>주소. 경기도 하남시 미사강변북로30번안길 20 | 사업자등록번호. 199-32-00198</p>
+          <p>통신판매. 제 2017-경기하남-0317 호</p>
+          <p class="copyright">Copyright© 2018 All rights reserved by acasa</p>
+        </div>
+      </div>
+    </footer>
+    <!-- 푸터 종료 -->
+
+    <!-- 모바일 전용 제일 꼭대기 section 시작 -->
+    <section class="conMobileA">
+      <div class="container">
+        <a href="http://acasa.cafe24.com" alt="home">
+          <img class="logo" src="../img/acasa-logo.svg" alt="acasa-logo">
+        </a>
+        <div class="navBtnBox"  onclick="openNav()">
+          <img src="img/navBtn.svg" alt="navButton" class="navBtn">
+        </div>
+      </div>
+      <div id="slideNav" class="slideNav">
+        <div class="darkBack" onclick="closeNav()"></div>
+        <nav class="mobileNav" onclick="closeNav()">
+          <div class="xBox" onclick="closeNav()">
+            <img src="img/closeBtn.svg" class="closebtn">
+          </div>
+          <ul>
+            <a href="#"><li>ABOUT US</li></a>
+            <a href="#"><li>FABRIC</li></a>
+            <a href="#"><li>ONLINE SHOP</li></a>
+            <a href="#"><li>EVENT</li></a>
+            <a href="#"><li>BOARD</li></a>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- 모바일 전용 제일 꼭대기 section 종료 -->
+  </body>
+</html>
